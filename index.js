@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'Hello') {
+  if (msg.content.toLowerCase() === 'hello') {
     msg.reply('Hello Buddy!!');
   }
 else if(msg.content==='Invite'){
