@@ -8,3 +8,4 @@ To help out in making this bot, Please Direct message me on Discord : @SuperALKA
 Current Functions:
 1. Replies to hello.
 2. Can give invite link of this bot.
+3. Can kick
