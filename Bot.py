@@ -1,6 +1,4 @@
 import discord
-import string
-
 client = discord.Client()
 @client.event
 async def on_message(message):
@@ -15,11 +13,5 @@ async def on_message(message):
         else:
             for i in range(1, len(message_content)):
                 add_result = add_result + int(message_content[i])
-
             await message.channel.send(add_result)
-
-
-
-
-
 client.run("Token")
