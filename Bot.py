@@ -11,7 +11,7 @@ async def on_message(message):
         user_msg = message.content
         message_content = user_msg.split()
         if len(message_content) == 2:
-            await message.channel.send("addition requires more than 2 operands")
+            await message.channel.send("addition requires more than one operands")
         else:
             for i in range(1, len(message_content)):
                 add_result = add_result + int(message_content[i])
