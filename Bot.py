@@ -1,4 +1,5 @@
 import discord
+from BasicCalculator import  add
 client = discord.Client()
 @client.event
 async def on_message(message):
@@ -7,14 +8,11 @@ async def on_message(message):
     if message.author.bot:
         pass
     elif message.content.startswith("add"):
-        user_msg = message.content
-        message_content = user_msg.split()
-        if len(message_content) == 2:                                                       # case of 1 operand
-            await message.channel.send("addition requires more than one operands")
-        else:
-            for i in range(1, len(message_content)):
-                result = result + int(message_content[i])
-            await message.channel.send(result)
+        addResult = add(message.content)
+        plus = addResult.getResult()
+        await message.channel.send(plus)
+
+        #await message.channel.send(result)
     elif message.content.startswith("sub"):
         user_msg = message.content
         message_content = user_msg.split()
@@ -57,4 +55,4 @@ async def on_message(message):
 
 
 
-client.run("Token")
+client.run("NzM5MTcxODA1NzI5OTE1MDMw.XyWlYw.1dAM8u2RHHYFqzs1pX57uyAfac4")
