@@ -4,7 +4,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print('We have logged in as {0.user}'.format(client))
+    print("Ready as " + str(client.user) + "!" )
 
 @client.event
 async def on_message(message):
@@ -26,4 +26,4 @@ async def on_message(message):
         remResult = remainder(message.content)
         await message.channel.send(remResult.get_result())
 
-client.run("Token")
+client.run("NzM5MTcxODA1NzI5OTE1MDMw.XyWlYw.HHAN7FQ3tXF0cCmty9xNUu3aMYA")
