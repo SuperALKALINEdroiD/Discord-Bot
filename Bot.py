@@ -1,10 +1,14 @@
 import discord
-from BasicCalculator import add, subtract, multiply, division, remainder
+from CalC import add, subtract, multiply, division, remainder
 client = discord.Client()
+
+@client.event
+async def on_ready():
+    print('We have logged in as {0.user}'.format(client))
+
 @client.event
 async def on_message(message):
-    md_result = 1
-    if message.author.bot:
+    if client.user == message.author:
         pass
     elif message.content.startswith("add"):
         addResult = add(message.content)
