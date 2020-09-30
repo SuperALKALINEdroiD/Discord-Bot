@@ -26,4 +26,4 @@ async def on_message(message):
         remResult = remainder(message.content)
         await message.channel.send(remResult.get_result())
 
-client.run("NzM5MTcxODA1NzI5OTE1MDMw.XyWlYw.HHAN7FQ3tXF0cCmty9xNUu3aMYA")
+client.run("Token")
