@@ -39,4 +39,4 @@ async def on_member_join(member):
             await channel.send(f"{member.mention} Joined, Have a good time here!")
 
 
-client.run("Get your own token discord dev portal")
+client.run("Get your own token from discord dev portal")
