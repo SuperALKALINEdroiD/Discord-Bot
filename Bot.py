@@ -40,11 +40,12 @@ async def on_member_join(member):
         if str(channel) == "member-log":
             await channel.send(f"{member.mention} Joined, Have a good time here!")
 
+
 @client.event
 async def on_member_remove(member):
     for channel in member.guild.channels:
         if str(channel) == "member-log":
-            await channel.send(f'{member.mention} left, You won\'t be missed(May be)!' )
+            await channel.send(f'{member.mention} left, You won\'t be missed(May be)!')
 
 
 client.run(token)
