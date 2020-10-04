@@ -5,7 +5,7 @@ intents = discord.Intents.default()
 intents.members = True
 client = discord.Client(intents=intents)
 
-token = "NzM5MTcxODA1NzI5OTE1MDMw.XyWlYw.pZ5LP1wIQzFsaRlFD8CzmHZmQYU"
+token = "Get a token from discord dev portal"
 
 
 @client.event
