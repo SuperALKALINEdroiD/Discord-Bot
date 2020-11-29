@@ -3,7 +3,7 @@ class add:
         self.messageContent = messageContent
 
     def getResult(self):
-        message = self.messageContent.split()
+        message = self.messageContent.split(';')
         if len(message) == 2:
             return message[1]
         else:
