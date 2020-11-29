@@ -1,11 +1,13 @@
 import discord
 from CalC import add, subtract, multiply, division, remainder
+from twilio_message import *
 
 intents = discord.Intents.default()
 intents.members = True
 client = discord.Client(intents=intents)
 
-token = "Token comes here"
+token_file = open("discord_token.txt", "r")
+token = token_file.read()
 
 
 @client.event
@@ -32,6 +34,11 @@ async def on_message(message):
     elif message.content.startswith("rem"):
         remResult = remainder(message.content)
         await message.channel.send(remResult.get_result())
+    elif message.content.startswith("sms"):
+        sms = twilio_message(message.content)
+        await message.channel.send(sms.send_sms())
+
+    
 
 
 @client.event
