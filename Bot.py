@@ -5,12 +5,12 @@ intents = discord.Intents.default()
 intents.members = True
 client = discord.Client(intents=intents)
 
-token = "Get a token from discord dev portal"
+token = "Token comes here"
 
 
 @client.event
 async def on_ready():
-    print("Ready as " + str(client.user) + "!")
+    print( str(client.user) + " is Ready!!")
 
 
 @client.event
@@ -45,7 +45,7 @@ async def on_member_join(member):
 async def on_member_remove(member):
     for channel in member.guild.channels:
         if str(channel) == "member-log":
-            await channel.send(f'{member.mention} left, You won\'t be missed(May be)!')
+            await channel.send(f'{member.mention} left, You won\'t be missed(Probably  xD)!')
 
 
 client.run(token)
