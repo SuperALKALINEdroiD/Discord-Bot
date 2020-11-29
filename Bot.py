@@ -5,7 +5,7 @@ intents = discord.Intents.default()
 intents.members = True
 client = discord.Client(intents=intents)
 
-token = "NzM5MTcxODA1NzI5OTE1MDMw.XyWlYw.bfTRTeXYBPNjr5LE_Gnyit_msIM"
+token = "Token comes here"
 
 
 @client.event
