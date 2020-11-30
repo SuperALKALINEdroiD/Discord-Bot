@@ -1,8 +1,11 @@
 # Evil Melon - Discord Bot
 
 Perform basic Calculations
+
 A message when someone leaves or joins ths discord guild
+
 send SMS (Twilio API)
+
 
 More Coming Soon!!
 
