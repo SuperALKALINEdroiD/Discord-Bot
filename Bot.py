@@ -1,6 +1,7 @@
 import discord
 from CalC import add, subtract, multiply, division, remainder
 from twilio_message import *
+from Onliner import keep_alive
 
 intents = discord.Intents.default()
 intents.members = True
@@ -55,4 +56,5 @@ async def on_member_remove(member):
             await channel.send(f'{member.mention} left, You won\'t be missed(Probably  xD)!')
 
 
+keep_alive()
 client.run(token)
